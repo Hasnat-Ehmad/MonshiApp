@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_customer_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/str_profile"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_business_list_screen"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_customer_favorites"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/str_favorites"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_customer_activity"
+        android:icon="@drawable/account_c"
+        android:title="@string/str_activity"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_customer_appointments"
+        android:icon="@drawable/ic_class_color_24dp"
+        android:title="@string/str_activity"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

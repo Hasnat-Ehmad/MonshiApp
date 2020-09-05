@@ -1,0 +1,23 @@
+com.hasnat.imagecropper
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
+drawable ic_crop_drag_x
+drawable ic_crop_drag_y
+drawable ic_launcher
+drawable src_image
+drawable view_click_bg
+drawable view_click_selector
+id CropWindow
+id TitleView
+layout activity_cropimage
+string app_name
+string back
+string crop
+string loading
+string reset
+string rotate
+string save
+string saving
+string title
+style AppBaseTheme
+style AppTheme

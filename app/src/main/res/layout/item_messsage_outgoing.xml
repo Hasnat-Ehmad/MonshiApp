@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/chatIV"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/balloon_outgoing_normal1"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp">
+
+
+        <TextView
+            android:id="@+id/chatTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="dsfsdfsdfsdfsdfsdfsdf"
+            android:minWidth="70dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/timeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chatTV"
+            android:layout_alignEnd="@+id/chatTV"
+            android:layout_alignRight="@+id/chatTV"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="5dp"
+            android:text="10:45 PM"
+            android:textSize="12sp" />
+        <!--
+        android:layout_toLeftOf="@+id/messageStatusIV"
+        android:drawableRight="@drawable/message_got_read_receipt_from_target"-->
+
+        <!--<ImageView
+            android:id="@+id/messageStatusIV"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/message_got_read_receipt_from_target"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@android:color/transparent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+        <!--<android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:titleTextColor="@android:color/black"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        app:itemIconTint="@drawable/navigation_item"
+        app:menu="@menu/bottom_navigation_items"
+        app:itemTextColor="@drawable/navigation_item"
+        android:background="@color/textColorPrimary"
+        app:labelVisibilityMode="labeled"
+        android:layoutMode="opticalBounds" />
+<!--
+        app:labelVisibilityMode="labeled"
+android:theme="@style/Widget.BottomNavigationView"
+-->
+
+</android.support.design.widget.CoordinatorLayout>

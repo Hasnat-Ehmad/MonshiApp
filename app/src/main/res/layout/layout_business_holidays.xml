@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_label_to"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="تا"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_label_from"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="از"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_saturday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_saturday_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/array_name"
+                />
+<!--android:entries="@array/array_name"-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_saturday_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+
+
+        <ToggleButton
+            android:id="@+id/toggle_saturday"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:padding="5dp"
+            android:background="@drawable/toggle_slider"
+           />
+
+        <TextView
+            android:id="@+id/tv_saturday"
+            android:text="شنبه:"
+            android:gravity="right|center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sunday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_sunday_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+
+        <!--<Spinner-->
+            <!--android:id="@+id/spinner_sunday_to"-->
+            <!--android:layout_weight="1.6"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="text"-->
+            <!--android:maxLength="6"-->
+            <!--android:drawSelectorOnTop="true"-->
+            <!--android:entries="@array/array_name"-->
+            <!--/>-->
+
+        <TextView
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_sunday_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+        <!--<Spinner
+            android:id="@+id/spinner_sunday_from"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="6"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_name"
+            />-->
+
+        <ToggleButton
+            android:id="@+id/toggle_sunday"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/toggle_slider"
+            />
+
+        <TextView
+            android:id="@+id/tv_sunday"
+            android:text="یکشنبه:"
+            android:gravity="right|center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_monday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_monday_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+
+      <!--  <Spinner
+            android:id="@+id/spinner_monday_to"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="6"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_name"
+            />-->
+
+        <TextView
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_monday_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+       <!-- <Spinner
+            android:id="@+id/spinner_monday_from"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="6"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_name"
+            />-->
+
+        <ToggleButton
+            android:id="@+id/toggle_monday"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/toggle_slider"
+            />
+
+        <TextView
+            android:id="@+id/tv_monday"
+            android:text="دوشنبه:"
+            android:gravity="right|center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_tuesday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_tuesday_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+      <!--  <Spinner
+            android:id="@+id/spinner_tuesday_to"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="6"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_name"
+            />-->
+
+        <TextView
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_tuesday_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+      <!--  <Spinner
+            android:id="@+id/spinner_tuesday_from"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="6"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_name"
+            />-->
+
+        <ToggleButton
+            android:id="@+id/toggle_tuesday"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/toggle_slider"
+            />
+
+        <TextView
+            android:id="@+id/tv_tuesday"
+            android:text="سهشنبه:"
+            android:gravity="right|center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_wednesday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_wednesday_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+       <!-- <Spinner
+            android:id="@+id/spinner_wednesday_to"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="6"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_name"
+            />-->
+
+        <TextView
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_wednesday_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+       <!-- <Spinner
+            android:id="@+id/spinner_wednesday_from"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="6"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_name"
+            />-->
+
+        <ToggleButton
+            android:id="@+id/toggle_wednesday"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/toggle_slider"
+            />
+
+        <TextView
+            android:id="@+id/tv_wednesday"
+            android:text="چهار شنبه:"
+            android:gravity="right|center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_thursday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_thursday_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+     <!--   <Spinner
+            android:id="@+id/spinner_thursday_to"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="6"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_name"
+            />-->
+
+        <TextView
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_thursday_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+       <!-- <Spinner
+            android:id="@+id/spinner_thursday_from"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="6"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_name"
+            />-->
+
+        <ToggleButton
+            android:id="@+id/toggle_thursday"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/toggle_slider"
+            />
+
+        <TextView
+            android:id="@+id/tv_thursday"
+            android:text="پنج شنبه:"
+            android:gravity="right|center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_friday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_friday_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+       <!-- <Spinner
+            android:id="@+id/spinner_friday_to"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_name"
+            />-->
+
+        <TextView
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_friday_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_name"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                />
+        </LinearLayout>
+
+     <!--   <Spinner
+            android:id="@+id/spinner_friday_from"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_name"
+            />-->
+
+        <ToggleButton
+            android:id="@+id/toggle_friday"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/toggle_slider"
+            />
+
+        <TextView
+            android:id="@+id/tv_friday"
+            android:text="جمعه:"
+            android:gravity="right|center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

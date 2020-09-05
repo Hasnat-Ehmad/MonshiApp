@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_marginBottom="57dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".pagerfragmentcontiners.BusinessDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
+
+    <TextView
+        android:id="@+id/tv_label_dashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="business name"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/img_profile_pic"
+        android:layout_width="120dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/grey_"
+        android:src="@drawable/ic_person_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_dashboard" />
+
+    <LinearLayout
+        android:id="@+id/layoutcustomerinfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="@+id/img_profile_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_profile_pic"
+        app:layout_constraintTop_toTopOf="@+id/img_profile_pic">
+
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_phone_android_black_24dp"
+            android:drawablePadding="5dp"
+            android:gravity="right"
+            android:padding="2dp"
+            android:text="dummy"
+            />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_format_indent_decrease_black_24dp"
+            android:drawablePadding="5dp"
+            android:gravity="right"
+            android:padding="2dp"
+            android:lines="1"
+            android:text="dummy"
+            />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_home_black_24dp"
+            android:drawablePadding="5dp"
+            android:gravity="right"
+            android:padding="2dp"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="dummy"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_info_black_24dp"
+            android:drawablePadding="5dp"
+            android:gravity="right"
+            android:padding="2dp"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="dummy" />
+        <!--
+            <TextView
+                android:id="@+id/tv_label_customer_addresss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="نشانی:"
+                android:textColor="@color/navigationBarColor"
+                android:textSize="17sp" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ToggleButton
+                android:id="@+id/toggle_favorite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:background="@drawable/toggle_favorite"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginTop="2dp"
+                app:layout_constraintBottom_toBottomOf="@+id/materialRatingBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/materialRatingBar" />
+
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/materialRatingBar"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="3.7"
+                android:numStars="5"
+                android:rating="3"
+                android:layout_marginRight="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_profile_pic"
+                app:layout_constraintEnd_toEndOf="@+id/layoutcustomerinfo"
+                app:layout_constraintTop_toTopOf="@+id/img_profile_pic" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        app:tabIndicator="@color/textColorPrimary"
+        app:tabIndicatorColor="@color/textColorPrimary"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+
+        android:background="?attr/colorPrimary"
+        android:layoutDirection="ltr"
+        android:elevation="6dp"
+        android:layout_marginTop="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:tabBackground="@drawable/tab_color_selector"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile_pic" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_layout"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+
+</android.support.constraint.ConstraintLayout>
+
+<!-- <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->

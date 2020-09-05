@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_staff_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/str_profile"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_staff_activity"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/str_activity"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_staff_booking"
+        android:icon="@drawable/ic_perm_contact_calendar_white_24dp"
+        android:title="@string/str_book"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_more_horiz_black_24dp"
+        android:title="@string/str_more"
+        app:showAsAction="ifRoom"/>
+
+
+
+
+</menu>

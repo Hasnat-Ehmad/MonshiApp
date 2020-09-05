@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:id="@+id/scrollView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+    android:layoutDirection="rtl"
+        android:fillViewport="true"
+        tools:context=".pagerfragmentcontiners.BusinessDetailFragment">
+
+
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_dashboard">
+
+            <LinearLayout
+                android:id="@+id/container_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar_activity" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_label_dashboard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="business name"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/container_toolbar" />
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="fill_parent"
+            android:layout_height="175dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_dashboard"
+            />
+
+        <!-- <ImageView
+                android:id="@+id/img_profile_pic"
+                android:layout_width="0dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/grey_"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_person_black_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_dashboard"/>-->
+
+            <LinearLayout
+                android:id="@+id/layoutcustomerinfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:weightSum="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/slider">
+
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_phone_android_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:lines="1"
+                    android:padding="2dp"
+                    android:gravity="start"
+                    android:text="dummy"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_phone_android_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_format_indent_decrease_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:lines="1"
+
+                    android:padding="2dp"
+                    android:text="dummy"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_format_indent_decrease_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_home_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:padding="2dp"
+                    android:text="dummy"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_home_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_info_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="marquee"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="dummy"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_info_black_24dp" />
+                <!--
+        <TextView
+            android:id="@+id/tv_label_customer_addresss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="نشانی:"
+            android:textColor="@color/navigationBarColor"
+            android:textSize="17sp" />-->
+
+
+            </LinearLayout>
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/materialRatingBar"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3"
+
+                android:progressTint="@color/gold"
+                android:progressBackgroundTint="@color/gold"
+                android:secondaryProgressTint="@color/gold"
+
+                app:layout_constraintBottom_toBottomOf="@+id/toggle_favorite"
+                app:layout_constraintEnd_toEndOf="@+id/layoutcustomerinfo"
+                app:layout_constraintTop_toTopOf="@+id/toggle_favorite" />
+
+            <ToggleButton
+                android:id="@+id/toggle_favorite"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/toggle_favorite"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintStart_toStartOf="@+id/layoutcustomerinfo"
+                app:layout_constraintTop_toBottomOf="@+id/layoutcustomerinfo" />
+
+        <LinearLayout
+            android:id="@+id/tab_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggle_favorite">
+
+
+
+
+
+           <!-- <Button
+                android:id="@+id/btn_service_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:maxLines="1"
+                android:text="@string/service"/>-->
+            <Button
+                android:id="@+id/btn_class_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/monthly_calendar_24"
+                android:padding="10dp"
+                android:maxLines="1"
+                android:text="@string/str_class_list"
+                android:drawableLeft="@drawable/monthly_calendar_24" />
+            <Button
+                android:id="@+id/btn_staff_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:maxLines="1"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/p1"
+                android:padding="10dp"
+                android:drawableTint="@android:color/white"
+                android:text="@string/str_teacher_list"
+                android:drawableLeft="@drawable/p1" />
+            <Button
+                android:id="@+id/btn_bus_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:maxLines="1"
+                android:drawableStart="@drawable/ic_map_black_24dp"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+                android:drawablePadding="5dp"
+                android:drawableTint="@android:color/white"
+                android:text="@string/map"
+                android:drawableLeft="@drawable/ic_map_black_24dp" />
+
+
+        </LinearLayout>
+        <!--<FrameLayout
+            android:id="@+id/viewpager_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/frame_layout">
+
+        </FrameLayout>-->
+            <!--<android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:background="?attr/colorPrimary"
+
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggle_favorite"
+                app:tabBackground="@drawable/tab_color_selector"
+                app:tabIndicator="@color/textColorPrimary"
+                app:tabIndicatorColor="@color/textColorPrimary"
+                app:tabTextAppearance="@style/TabLayoutTextStyle" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_layout" />-->
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:animateLayoutChanges="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_button_layout"
+            >
+
+        </FrameLayout>
+
+        </android.support.constraint.ConstraintLayout>
+</ScrollView>

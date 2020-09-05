@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        tools:context=".fragments.MoreFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <TextView
+            android:id="@+id/tv_business_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_businesses"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_perm_contact_calendar_black_24dp"
+            android:drawableStart="@drawable/ic_perm_contact_calendar_black_24dp"
+            android:padding="12dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light"
+            />
+
+        <TextView
+            android:id="@+id/tv_fav_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_favorite_list"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_favorite_colored_24dp"
+            android:drawableStart="@drawable/ic_favorite_colored_24dp"
+            android:padding="12dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            />
+
+        <View
+            android:id="@+id/view_0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light"
+            />
+
+        <TextView
+            android:id="@+id/tv_customer_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_access_time_colored_30dp"
+            android:drawableLeft="@drawable/ic_access_time_colored_30dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:gravity="center|right"
+            android:text="@string/str_appointments"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_recep_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_access_time_colored_30dp"
+            android:drawableLeft="@drawable/ic_access_time_colored_30dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:gravity="center|right"
+            android:text="@string/str_customer"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/grey_light" />-->
+
+
+        <TextView
+            android:id="@+id/tv_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_exit_to_app_colored_24dp"
+            android:drawableLeft="@drawable/ic_exit_to_app_colored_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:text="@string/login"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_signup_colored_36dp"
+            android:drawableLeft="@drawable/ic_signup_colored_36dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:text="@string/signup"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:gravity="right|center"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+
+        <TextView
+            android:id="@+id/tv_tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_privacy_policy_24dp"
+            android:drawableLeft="@drawable/ic_privacy_policy_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:text="@string/str_tutorial"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+        <TextView
+            android:id="@+id/tv_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_privacy_policy_24dp"
+            android:drawableLeft="@drawable/ic_privacy_policy_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:text="@string/str_privacy_policy"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+        <TextView
+            android:id="@+id/tv_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:text="@string/str_contact_us"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_exit_to_app_colored_24dp"
+            android:drawableLeft="@drawable/ic_exit_to_app_colored_24dp"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:text="@string/str_logout"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+        <TextView
+            android:id="@+id/tv_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_left_colored_24dp"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:text="@string/str_chat"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+    </LinearLayout>
+
+</ScrollView>
+

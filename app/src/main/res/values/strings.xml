@@ -1,0 +1,383 @@
+<resources>
+
+    <string name="url_" translatable="false">http://192.168.100.14/monshiapp/app/</string>
+    <string name="url"  translatable="false">http://qa.monshiapp.com/appA/</string>
+
+    <string name="app_name"        translatable="false">منشی‌ اپ</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="action_search"   translatable="false">Search</string>
+    <string name="drawer_open"     translatable="false">Open</string>
+    <string name="drawer_close"    translatable="false">Close</string>
+
+    <!--Hasnat 29-3-2019-->
+    <string name="login"                translatable="false">ورود</string>
+    <string name="signup"               translatable="false">ثبت نام</string>
+    <string name="logout"               translatable="false">خروج</string>
+    <string name="enter_password"       translatable="false">رمز عبور را وارد کنید</string>
+    <string name="enter_username"       translatable="false">نام کاربری را وارد کنید</string>
+    <string name="enter_valid_username" translatable="false">یک نام کاربری معتبر وارد کنید</string>
+    <string name="enter_valid_password" translatable="false">یک رمز عبور معتبر وارد کنید</string>
+    <string name="donot_have_account"   translatable="false">حساب کاربری ندارید ؟</string>
+    <string name="forget_password"      translatable="false">رمز عبور خود را فراموش کرده اید؟</string>
+    <!--Hasnat end-->
+
+    <string name="nav_item_non_login" translatable="false">اکنون ثبت کن</string>
+    <string-array name="nav_drawer_labels_non_login">
+        <item>@string/nav_item_non_login</item>
+    </string-array>
+
+    <string name="nav_item_createbusinessaccount" translatable="false">ایجاد حساب تجاری</string>
+    <string name="nav_item_bookNow"               translatable="false">فهرست کسب و کار</string>
+    <string name="nav_item_businesslist"          translatable="false">اکنون ثبت کن</string>
+    <string name="nav_item_dashboard"             translatable="false">داشبورد</string>
+    <string name="nav_item_management_staff"      translatable="false">کارکنان مدیریت</string>
+    <string name="nav_item_management_service"    translatable="false">خدمات مدیریت</string>
+    <string name="nav_item_calendar"              translatable="false">تقویم</string>
+    <string name="nav_item_customer_list"         translatable="false">فهرست مشتری</string>
+    <string name="nav_item_bill_history_list"     translatable="false">تاریخ بیل</string>
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_createbusinessaccount</item>
+        <item>@string/nav_item_bookNow</item>
+        <item>@string/nav_item_businesslist</item>
+        <item>@string/nav_item_dashboard</item>
+        <item>@string/nav_item_management_staff</item>
+        <item>@string/nav_item_management_service</item>
+        <item>@string/nav_item_calendar</item>
+        <item>@string/nav_item_customer_list</item>
+        <item>@string/nav_item_bill_history_list</item>
+    </string-array>
+
+
+    <string name="nav_item_dashboard_recp"          translatable="false">داشبورد</string>
+    <string name="nav_item_management_staff_recp"   translatable="false">کارکنان مدیریت</string>
+    <string name="nav_item_management_service_recp" translatable="false">خدمات مدیریت</string>
+    <string name="nav_item_calendar_recp"           translatable="false">تقویم</string>
+    <string name="nav_item_customer_list_recp"      translatable="false">فهرست مشتری</string>
+
+    <string-array name="nav_drawer_labels_recp">
+        <item>@string/nav_item_dashboard_recp</item>
+        <item>@string/nav_item_management_staff_recp</item>
+        <item>@string/nav_item_management_service_recp</item>
+        <item>@string/nav_item_calendar</item>
+        <item>@string/nav_item_customer_list_recp</item>
+    </string-array>
+
+
+    <string name="nav_item_createbusinessaccount_customer" translatable="false">ایجاد حساب تجاری</string>
+    <string name="nav_item_home_customer"                  translatable="false">اکنون ثبت کن</string>
+    <string name="nav_item_favort_customer"                translatable="false">علاقه مندیها</string>
+    <string name="nav_item_activities_customer"            translatable="false">فعالیت ها</string>
+    <string name="nav_item_account_customer"               translatable="false">حساب کاربری</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels_customer">
+        <item>@string/nav_item_createbusinessaccount_customer</item>
+        <item>@string/nav_item_home_customer</item>
+        <item>@string/nav_item_favort_customer</item>
+        <item>@string/nav_item_activities_customer</item>
+        <item>@string/nav_item_account_customer</item>
+    </string-array>
+
+
+    <string name="title_messages" translatable="false">منشی‌ اپ</string>
+    <string name="title_friends"  translatable="false">منشی‌ اپ</string>
+    <string name="title_home"     translatable="false">منشی‌ اپ</string>
+
+    <string-array name="null_array">
+        <item>00:00</item>
+    </string-array>
+
+    <string-array name="service_time">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="service_wait_time">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="service_payonline">
+        <item>اجازه پرداخت آنلاین</item>
+        <item>بله</item>
+        <item>نه</item>
+    </string-array>
+
+    <string-array name="contact_us">
+        <item>پست الکترونیک</item>
+        <item>تلفن</item>
+    </string-array>
+
+    <string-array name="make_staff_recep">
+        <item>انتخاب نقش</item>
+        <item>منشی‌</item>
+        <item>کارکنان</item>
+    </string-array>
+
+    <string-array name="service_payonline_yes">
+        <item>پرداخت انلاین</item><!--pay online-->
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string-array name="service_payonline_on">
+        <item>pay online</item>
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+
+    <string-array name="verification_code_selection">
+        <item>ای میل</item>
+        <item>موبائل</item>
+    </string-array>
+
+
+    <string-array name="array_name">
+        <item>۰۸:۰۰</item>
+        <item>۰۹:۰۰</item>
+        <item>۱۰:۰۰</item>
+        <item>۱۱:۰۰</item>
+        <item>۱۲:۰۰</item>
+        <item>۱۳:۰۰</item>
+        <item>۱۴:۰۰</item>
+        <item>۱۵:۰۰</item>
+        <item>۱۶:۰۰</item>
+        <item>۱۷:۰۰</item>
+        <item>۱۸:۰۰</item>
+        <item>۱۹:۰۰</item>
+        <item>۲۰:۰۰</item>
+    </string-array>
+
+    <string-array name="empty_array_time">
+        <item>انتخاب زمان</item>
+    </string-array>
+
+    <string-array name="empty_array_service">
+        <item>انتخاب خدمات</item>
+    </string-array>
+
+    <string-array name="empty_array_staff">
+        <item>انتخاب کارکنان</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment"         translatable="false">Hello blank fragment</string>
+    <string name="something_went_wrong"         translatable="false">چیزی اشتباه رفت</string>
+    <string name="str_continue"                 translatable="false">Continue</string>
+    <string name="customer_name"                translatable="false">نام مشتری</string>
+    <string name="customer_email"               translatable="false">آدرس ایمیل</string>
+    <string name="customer_phone"               translatable="false">شماره موبایل</string>
+    <string name="address"                      translatable="false">نشانی</string>
+    <string name="wishlist"                     translatable="false">لیست علاقه مندیها</string>
+    <string name="str_businesses"               translatable="false">کسب و کار من</string>
+    <string name="str_search_business"          translatable="false">جستجو کردن</string>
+    <string name="str_book"                     translatable="false">خانه</string>
+    <string name="str_more"                     translatable="false">بیشتر</string>
+    <string name="str_dashboard"                translatable="false">داشبورد</string>
+    <string name="str_customer"                 translatable="false">لیست مشتریها</string>
+    <string name="str_action"                   translatable="false">عمل</string>
+    <string name="str_activity"                 translatable="false">فعالیت</string>
+    <string name="dashboard"                    translatable="false">داشبورد</string>
+    <string name="str_business_list"            translatable="false">ایجاد کسب و کار جدید </string>
+    <string name="servic_name"                  translatable="false">نام خدمات</string>
+    <string name="str_customer_list"            translatable="false">فهرست مشتری</string>
+    <string name="str_service_list"             translatable="false">لیست خدمات</string>
+    <string name="str_staff_list"               translatable="false">لیست کارکنان</string>
+    <string name="str_mobile"                   translatable="false">سیار</string>
+    <string name="str_password"                 translatable="false">کلمه عبور</string>
+    <string name="str_profile"                  translatable="false">مشخصات</string>
+    <string name="str_favorites"                translatable="false">مورد علاقه</string>
+    <string name="str_class_list"               translatable="false">کلاس</string>
+    <string name="str_teacher_list"             translatable="false">اساتید</string>
+    <string name="str_business_info"            translatable="false">اطلاعات کسب و کار</string>
+    <string name="str_label_class_name"         translatable="false">نام کلاس:</string>
+    <string name="str_class_session_s"          translatable="false">جلسه کلاس</string>
+    <string name="str_online_payment"           translatable="false">پرداخت آنلاین را انتخاب کنید</string>
+    <string name="str_name"                     translatable="false">نام</string>
+    <string name="how_do_you_want_us_to_answer" translatable="false">چگونه می خواهی ما جواب بدهی؟</string>
+    <string name="str_confirm"                  translatable="false">تایید</string>
+    <string name="contact_us"                   translatable="false">تماس با ما</string>
+    <string name="str_privacy_policy"           translatable="false">سیاست حفظ حریم خصوصی</string>
+    <string name="persian_continue"             translatable="false">ادامه</string>
+    <string name="map"                          translatable="false">نقشه</string>
+    <string name="staff"                        translatable="false">کارکنان</string>
+    <string name="service"                      translatable="false">خدمات</string>
+    <string name="book_appt"                    translatable="false">رزرو</string>
+    <string name="str_favorite_list"            translatable="false">علاقه مندیها</string>
+    <string name="str_contact_us"               translatable="false">تماس با ما</string>
+    <string name="str_chat"                     translatable="false">پشتیبانی</string>
+    <string name="str_select_sub_cat"           translatable="false">کسب و کار زیر شاخه</string>
+    <string name="str_select_cat"               translatable="false">نوع کسب و کار</string>
+    <string name="str_select_city"              translatable="false">انتخاب شهر</string>
+    <string name="str_select_state"             translatable="false">انتخاب استان</string>
+
+    <string-array name="empty_array_state">
+        <item>انتخاب استان</item>
+    </string-array>
+
+    <string-array name="empty_array_city">
+        <item>انتخاب شهر</item>
+    </string-array>
+
+    <string-array name="empty_array_cat">
+        <item>نوع کسب و کار</item>
+    </string-array>
+
+    <string-array name="empty_array_sub_cat">
+        <item>کسب و کار زیر شاخه</item>
+    </string-array>
+
+    <string name="str_teacher"       translatable="false">استاد :</string>
+    <string name="str_cost"          translatable="false">هزینه :</string>
+    <string name="sites"             translatable="false">ظرفیت :</string>
+    <string name="str_gender"        translatable="false">جنسیت :</string>
+    <string name="str_sessions_days" translatable="false">لیست روز</string>
+
+
+    <string name="str_logout"                    translatable="false">خروج</string>
+    <string name="str_tutorial"                  translatable="false">آموزش</string>
+    <string name="str_submit"                    translatable="false">تائید و ذخیره</string>
+    <string name="str_bus_name"                  translatable="false">عنوان کسب و کار خود را فارسی‌ تایپ کنید</string>
+    <string name="str_business_id_name"          translatable="false">اسم کاربری کسب و کار خود را فارسی‌ تایپ کنید</string>
+    <string name="str_bus_desc"                  translatable="false">توضیحات کسب و کار خود را فارسی‌ تایپ کنید</string>
+    <string name="str_label_iran_time"           translatable="false">منطقه زمانی در ایران (GMT + 3: 30)</string>
+    <string name="str_currency_label"            translatable="false">ريال ايران</string>
+    <string name="str_select_photo"              translatable="false">انتخاب عکس‌های گالری</string>
+    <string name="str_business_action"           translatable="false">اقدامات</string>
+    <string name="str_service_action"            translatable="false">عملیات سرویس</string>
+    <string name="str_staff_action"              translatable="false">عملیات سرویس</string>
+    <string name="str_book_bus"                  translatable="false">رزرواسیون</string>
+    <string name="str_edit_business"             translatable="false">ویرایش اطلاعات عمومی کسب و کار</string>
+    <string name="str_edit_service"              translatable="false">خدمات را ویرایش کنید</string>
+    <string name="str_edit_staff"                translatable="false">کارکنان را ویرایش کنید</string>
+    <string name="str_business_detail"           translatable="false">ویرایش جزئیات کسب و کار</string>
+    <string name="str_business_delete"           translatable="false">حذف کسب و کار</string>
+    <string name="str_service_delete"            translatable="false">سرویس را حذف کنید</string>
+    <string name="str_staff_delete"              translatable="false">کارکنان را حذف کنید</string>
+    <string name="str_appointment_delete"        translatable="false">ملاقات را حذف کنید</string>
+    <string name="str_close"                     translatable="false">بستن</string>
+    <string name="str_label_teacher"             translatable="false">معلم:</string>
+    <string name="str_label_cost"                translatable="false">هزینه:</string>
+    <string name="str_label_sites"               translatable="false">صندلی ها:</string>
+    <string name="str_label_gender"              translatable="false">جنسیت:</string>
+    <string name="str_forget_password"           translatable="false">رمزتان را فراموش کرده اید؟</string>
+    <string name="str_welcome"                   translatable="false">خوش آمدید!</string>
+    <string name="str_lable_login_text"          translatable="false">اگر حساب کاربری دارید، لطفا وارد شوید</string>
+    <string name="str_username_hint"             translatable="false">نام کاربری خود را وارد کنید</string>
+    <string name="str_password_hint"             translatable="false">رمز عبور خود را تایپ کنید</string>
+    <string name="str_welcome_to_monshiapp"      translatable="false">به منشی‌ اپ خوش آمدید…</string>
+    <string name="confirm_staff_delete"          translatable="false">آیا مطمئن هستید که می خواهید این کارکنان را حذف کنید؟</string>
+    <string name="confirm_appointment_delete"    translatable="false"> آیا می خواهید این ملاقات را حذف کنید ؟</string>
+    <string name="confirm_service_delete"        translatable="false">آیا مطمئن هستید که می خواهید این سرویس را حذف کنید؟</string>
+    <string name="confirm_business_delete"       translatable="false">آیا مطمئن هستید که می خواهید این کسب و کار را حذف کنید؟</string>
+    <string name="str_no"                        translatable="false">نه</string>
+    <string name="str_yes"                       translatable="false">بله</string>
+    <string name="str_description"               translatable="false">توضیحات:</string>
+    <string name="str_billing_list"              translatable="false">جستجوی صورتحساب</string>
+    <string name="str_billing_search"            translatable="false">شماره مرجع:</string>
+    <string name="str_search"                    translatable="false">جستجو کردن</string>
+    <string name="str_billing_reset"             translatable="false">تنظیم مجدد</string>
+    <string name="str_billing_list1"             translatable="false">لیست صورتحساب</string>
+    <string name="str_billing_id"                translatable="false">شماره مرجع:</string>
+    <string name="str_billing_price"             translatable="false">هزینه:</string>
+    <string name="str_billing_payment"           translatable="false">وضعیت:</string>
+    <string name="str_billing_date"              translatable="false">تاریخ:</string>
+    <string name="str_add_image"                 translatable="false">انتخاب عکس اصلی</string>
+    <string name="str_timing"                    translatable="false">زمان</string>
+    <string name="str_business_is_off"           translatable="false">کسب و کار امروز خاموش است</string>
+    <string name="str_valid_business_id"         translatable="false">شناسه کسب و کار معتبر</string>
+    <string name="str_note"                      translatable="false">توجه داشته باشید</string>
+    <string name="str_unfrvort_text"             translatable="false">آیا می خواهید این کسب و کار را از لیست علاقه مندی ها حذف کنید؟</string>
+    <string name="str_frvort_text"               translatable="false">آیا می خواهید این کسب و کار را در لیست علاقه مندی ها اضافه کنید؟</string>
+    <string name="str_already_booked"            translatable="false">متاسفانه قبلا رزرو شده است</string>
+    <string name="str_remove_from_fvt"           translatable="false">آیا مطمئن هستید که می خواهید این را از موارد دلخواه حذف کنید ؟</string>
+    <string name="str_remove_frvt_title"         translatable="false">حذف از موارد دلخواه</string>
+    <string name="str_create_business_title"     translatable="false">اطلاعات عمومی‌ کسب و کار</string>
+    <string name="str_business_contact_no"       translatable="false">شماره تماس کسب و کار خود را فارسی‌ تایپ کنید</string>
+    <string name="str_business_address"          translatable="false">خیابان، کوچه، شماره پلاک درب</string>
+    <string name="str_discussion"                translatable="false">بحث</string>
+    <string name="str_book_appt"                 translatable="false">رزرو کنید</string>
+    <string name="str_new_student"               translatable="false">شاگرد جدید</string>
+    <string name="str_new_customer"              translatable="false"> + مشتری جدید</string>
+    <string name="str_search_monshiapp_customer" translatable="false">جستجوی مشتری بین کاربران منشی‌ اپ</string>
+    <string name="str_search_customer"           translatable="false">جستجوی بین مشتریهای این کسب و کار</string>
+    <string name="str_search_monshiapp_student"  translatable="false">جستجو بین کاربران منشی‌ اپ</string>
+    <string name="str_search_student"            translatable="false">جستجو بین شاگردان داخلی</string>
+
+    <!--
+    //hassan added
+    -->
+
+    <string name="str_description_"         translatable="false">توضیحات</string>
+    <string name="str_service_price"        translatable="false">خدمات قیمت</string>
+    <string name="str_service_time"         translatable="false">خدمات دقیقه</string>
+    <string name="str_repeat"               translatable="false">تکرار</string>
+    <string name="str_to"                   translatable="false">برای</string>
+    <string name="str_year"                 translatable="false">سال</string>
+    <string name="str_no_time_avaiable"     translatable="false">اینروز روز تعطیل است</string>
+    <string name="str_search_hint"          translatable="false">اسم/سرویس/کسب و کار/ شهر</string>
+    <string name="str_manage_staff"         translatable="false">مدیریت کارکنان</string>
+    <string name="str_manage_service"       translatable="false">مدیریت خدمات</string>
+    <string name="str_calendar"             translatable="false">تقویم</string>
+    <string name="str_billing"              translatable="false">صورتحساب</string>
+    <string name="str_manage_class"         translatable="false">لیست کلاس</string>
+    <string name="str_appoinments"          translatable="false">لیست ملاقات ها</string>
+    <string name="str_option"               translatable="false">گزینه</string>
+    <string name="str_update_appoinment"    translatable="false">ويرايش ملاقات</string>
+    <string name="str_delet_appoinment"     translatable="false">حذف ملاقات</string>
+    <string name="str_employee_name"        translatable="false">نام کاربری</string>
+    <string name="str_employee_password"    translatable="false">کلمه عبور</string>
+    <string name="str_employee_full_name"   translatable="false">نام کارمند</string>
+    <string name="str_email"                translatable="false">پست الکترونیک</string>
+    <string name="str_phone"                translatable="false">تلفن</string>
+    <string name="str_experience_expertise" translatable="false">تجربه و تخصص</string>
+    <string name="str_experice"             translatable="false">تجربه</string>
+    <string name="str_service_fee"          translatable="false">هزینه خدمات</string>
+    <string name="str_service_description"  translatable="false">شرح خدمات</string>
+    <string name="str_class_detail"         translatable="false">جزئیات کلاس</string>
+    <string name="str_name_class"           translatable="false">عنوان کلاس</string>
+    <string name="str_session_list"         translatable="false">لیست کلاس ها</string>
+    <string name="str_cancel"               translatable="false">انصراف</string>
+    <string name="str_start_date"           translatable="false">تاریخ شروع کلاس</string>
+    <string name="str_end_date"             translatable="false">تاریخ پایان کلاس</string>
+    <string name="str_total_sites"          translatable="false">تعداد صندلیها</string>
+    <string name="str_total_price"          translatable="false">هزینهٔ کلاس</string>
+    <string name="str_staff_disable"        translatable="false">کارکنان در این روز تعطیل هستند</string>
+    <string name="str_add_new_session"      translatable="false">اضافه کردن جلسه جدید</string>
+    <string name="str_ranking"              translatable="false">رتبه بندی</string>
+    <string name="str_feedback"             translatable="false">بازخورد</string>
+    <string name="str_create_business"      translatable="false">ایجاد کسب و کار جدید</string>
+    <string name="str_appointments"         translatable="false">قرار ملاقات ها</string>
+    <string name="str_notification_list"    translatable="false">فهرست اطلاع رسانیها</string>
+
+
+    <string-array name="spinner_repeat">
+        <item>رزرو برای هر روز</item>
+        <item>رزرو برای هر هفته</item>
+        <item>رزرو برای هر ماه</item>
+        <item>رزرو برای هر 6 ماه</item>
+    </string-array>
+
+    <string-array name="spinner_time">
+        <item>۱</item>
+        <item>۲</item>
+        <item>۳</item>
+        <item>۴</item>
+        <item>۵</item>
+        <item>۶</item>
+        <item>۷</item>
+    </string-array>
+
+</resources>

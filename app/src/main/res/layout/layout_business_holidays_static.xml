@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_saturday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_margin="2dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_saturday"
+            android:text="شنبه:"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/spinner_saturday_from"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="true"
+            android:text="08:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/dash1"
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/spinner_saturday_to"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+           />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_sunday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="5dp"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_sunday"
+            android:text="یکشنبه:"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/spinner_sunday_from"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="08:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/dash2"
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/spinner_sunday_to"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_monday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="5dp"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_monday"
+            android:text="دوشنبه:"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/spinner_monday_from"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="08:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/dash3"
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/spinner_monday_to"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_tuesday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="5dp"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_tuesday"
+            android:text="سهشنبه:"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/spinner_tuesday_from"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="08:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/dash4"
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/spinner_tuesday_to"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_wednesday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="5dp"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_wednesday"
+            android:text="چهار شنبه:"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/spinner_wednesday_from"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="08:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/dash5"
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/spinner_wednesday_to"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_thursday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="5dp"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_thursday"
+            android:text="پنج شنبه:"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/spinner_thursday_from"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="08:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/dash6"
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/spinner_thursday_to"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_friday"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="5dp"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_friday"
+            android:text="جمعه:"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/spinner_friday_from"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="08:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/dash7"
+            android:text="-"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/spinner_friday_to"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20:00:00"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light"
+        />
+
+</LinearLayout>

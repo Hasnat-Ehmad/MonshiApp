@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_overview"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="Info"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_trainer"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title="Service"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_control"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Staff"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_complete"
+        android:icon="@drawable/ic_perm_contact_calendar_black_24dp"
+        android:title="Appointment"
+        app:showAsAction="ifRoom"/>
+</menu>

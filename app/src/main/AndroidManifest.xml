@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.materialdesign"
+    >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+    <uses-feature android:name="android.hardware.location.gps" /> <!-- image cropper -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- device setup -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- speech -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- contact permission -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- the following two permissions are required if you want to take photo in selector -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MonshiappApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_white"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:name=".service.Notification_Service"/>
+
+        <activity android:name=".activity.ClassBookingActivity"
+           />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".activity.AddNewStaffActivity"
+          />
+        <activity android:name=".activity.ClassSessionListActivity"
+           />
+        <activity android:name=".activity.ForgetPasswordActivity"
+           />
+        <activity android:name=".activity.SignUpActivity"
+           />
+        <activity android:name=".activity.BusinessDetail_Activity"
+           />
+        <activity
+            android:name=".staff_work.StaffBookingActivity"
+            android:windowSoftInputMode="adjustPan"
+           />
+        <activity android:name=".staff_work.StaffScreensActivity"
+           />
+        <activity android:name=".activity.ChatActivity"
+           />
+        <activity android:name=".activity.LoginActivity"
+          >
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustNothing"
+          >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".activity.CustomerBookingActivity"
+            />
+        <activity
+            android:name="com.hasnat.imagecropper.CropImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnCloseSystemDialogs="true"
+            android:label="Monshiapp Cropper"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".activity.LandingPage_Activity"
+          />
+        <activity android:name=".activity.BusinessPublicDetail_Activity"
+          />
+        <activity
+            android:name=".activity.BookAppt_NonLogin"
+            android:windowSoftInputMode="adjustPan"
+           />
+        <activity
+            android:name=".activity.MainActivity_bottom_view"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity android:name=".activity.BusinessPublicDetail_Activity_Class"
+          />
+        <activity android:name=".activity.NonLogin_Activity"
+           />
+        <activity android:name=".activity.MenuActivity"
+           />
+        <activity android:name=".activity.BusinessPublicDetail_Activity_scroll"
+         />
+        <activity android:name=".activity.BusinessPublicDetail_Activity_Class_scroll"
+           />
+        <activity android:name=".activity.TutorialDotViewActivity"
+            >
+
+            <!--
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".activity.SplashScreen"
+            android:hardwareAccelerated="true"
+          >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zfdang.multiple_images_selector.ImagesSelectorActivity"
+            android:configChanges="orientation|screenSize"
+          />
+    </application>
+
+</manifest>

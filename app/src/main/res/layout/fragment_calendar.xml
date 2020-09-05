@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.CalendarFragment"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+
+    >
+
+<android.support.constraint.ConstraintLayout
+
+    android:layout_margin="8dp"
+    android:padding="5dp"
+    android:background="@drawable/grey_border"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.ratintech.behkha.persiandatepicker.PersianDatePicker
+        android:id="@+id/persian_date_picker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label_timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="زمان کسب و کار"
+        android:textColor="@android:color/black"
+        android:background="@drawable/grey_border"
+        android:padding="5dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/spinner_business_timing"
+        app:layout_constraintTop_toBottomOf="@+id/persian_date_picker" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinner_business_timing"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:entries="@array/null_array"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_timing"
+        android:layout_marginLeft="8dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_business_timing"
+        app:layout_constraintStart_toStartOf="@+id/spinner_business_timing"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_business_timing" />
+
+    <TextView
+        android:id="@+id/tv_label_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="8dp"
+        android:text="خدمات کسب و کار"
+        android:padding="5dp"
+        android:background="@drawable/grey_border"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_label_timing"
+        app:layout_constraintStart_toStartOf="@+id/spinner_business_service"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_timing"
+        android:layout_marginEnd="8dp" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinner_business_service"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner_business_timing"
+        app:layout_constraintTop_toTopOf="@+id/spinner_business_timing" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_business_service"
+        app:layout_constraintStart_toStartOf="@+id/spinner_business_service"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_business_service" />
+
+
+
+    <!--android:background="@drawable/spinner_bg"-->
+
+
+    <TextView
+        android:id="@+id/tv_label_staff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="کارکنان"
+        android:textSize="18sp"
+        android:background="@drawable/grey_border"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/spinner_business_staff"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_business_service" />
+
+
+   <!-- <com.jaredrummler.materialspinner.MaterialSpinner
+    />
+-->
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinner_business_staff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_staff"
+        />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_business_staff"
+        app:layout_constraintStart_toStartOf="@+id/spinner_business_staff"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_business_staff" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/str_continue"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_continue"
+        tools:layout_editor_absoluteX="16dp" />-->
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

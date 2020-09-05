@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/tv_label_date"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:text="تاریخ:"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="۱۳۹۷-۱۲-۱۷ ۰۹:۵۰:۰۰"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:textColor="@color/grey_"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/tv_label_service"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:text="اسم سرویس:"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_service"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="qwerty"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:textColor="@color/grey_"
+            android:paddingRight="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutcustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/tv_label_customer_name"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:text="اسم مشتری:"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_customer_name"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="business owner 1"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:textColor="@color/grey_"
+            android:paddingRight="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="2"
+
+        android:orientation="horizontal"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/tv_label__description"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:text="توضیحات:"
+            android:textSize="18sp"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="owner1"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:textColor="@color/grey_"
+            android:paddingRight="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutcost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/tv_label_cost"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:text="هزینه:"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="تکمیل شده"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:textColor="@color/grey_"
+            android:paddingRight="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutranking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_label_ranking"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:text="رتبه بندی:"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_ranking"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="درخواست رتبه بندی"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:textColor="@color/grey_"
+            android:paddingRight="10dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
